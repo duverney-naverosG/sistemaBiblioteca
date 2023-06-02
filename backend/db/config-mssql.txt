@@ -1,0 +1,10 @@
+CREAR USUARIO EN MSSQL MANAGEMENT 
+
+1) properties -> security -> SQL server and Windows authenticacion mode -> ok 
+2) restart 
+3) carpeta security-> login -> new login -> SQL server authenticacion-> llenar campos -> server roles-> sysadmin 
+
+OTRAS CONFIGURACIONES PARA LA CONEXION 
+explorador de archivos-> este equipo-> administrar-> servicios y aplicaciones-> AQL server configuration manager-> SQL server network configuration -> protocols for MSSQLSERVER -> tcp/ip -> YES
+IP Addresss-> TCP port (cambiar puerto su hay errores)
+explorador de archivos-> este equipo-> administrar-> servicios y aplicaciones-> SQL server services -> SQL server (MSSQLSERVER)-> restart
