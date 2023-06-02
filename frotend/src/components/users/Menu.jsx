@@ -31,6 +31,7 @@ export default function Menu() {
 
   const salir = () =>{
     Cookies.remove('SistemaBibliotecaUser');
+    Cookies.set('SistemaBibliotecaUser', JSON.stringify({'id': null, 'rol':null, 'identificacion': null}));
     navigate("/");
   }
 

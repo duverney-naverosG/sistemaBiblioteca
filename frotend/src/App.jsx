@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from 'react-hot-toast';
+import Cookies from 'js-cookie'
 
 import Login from './pages/Login.jsx'
 import NotFound from './pages/NotFound.jsx'
@@ -22,6 +23,8 @@ import ProtectedRouteUse from "./components/users/ProtectedRouteUser.jsx";
 import ProtectedRouteAdmin from "./components/admin/ProtectedRouteAdmin.jsx";
 
 function App() {
+
+  Cookies.set('SistemaBibliotecaUser', JSON.stringify({'id': null, 'rol': null, 'identificacion': null}));
 
   return (
     <div>
